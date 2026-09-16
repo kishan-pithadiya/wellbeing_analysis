@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wellbeing"
+version = "0.1.0"
+description = "A Python package to compute and visualize a custom Development Index from the Gapminder dataset"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE.txt" }
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
